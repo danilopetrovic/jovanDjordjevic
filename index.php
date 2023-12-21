@@ -1,16 +1,16 @@
 <?php
-$dir = "img";
+$dir = "img2";
 $niz = array();
 
 if (is_dir($dir)) {
     $dh = opendir($dir);
     while ($file = readdir($dh)) {
-        echo " | " . $file;
+        echo " | " . $file; // ispisuje imena fajlova iznad dokumenta...
         array_push($niz, $file);
     }
     closedir($dh);
 } else {
-    die('Nema "img" foldera...');
+    die('Nema "$dir" foldera...');
 }
 ?>
 <!DOCTYPE html>
@@ -34,9 +34,8 @@ if (is_dir($dir)) {
     -->
     <?php for ($i = 2; $i < count($niz); $i++) {
         ?>
-        <a href="img/<?= $niz[$i]; ?>" data-lg-size="548-450">
-            <img alt="<?= explode(' - ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="img/<?= $niz[$i]; ?>"/>
-        </a>
+        <a href="<?= $dir ?>/<?= $niz[$i]; ?>" data-lg-size="548-450">
+            <img alt="<?= explode(' - ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/> </a>
     <?php } ?>
 </div>
 </body>
