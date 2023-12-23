@@ -1,20 +1,33 @@
 <?php
-$dir = "img2";
+header('Content-Type: text/html; charset=utf-8');
+ini_set('default_charset', 'UTF-8');
+$dir = "galerija_ikona";
 $niz = array();
 
 if (is_dir($dir)) {
-    $dh = opendir($dir);
-    while ($file = readdir($dh)) {
-        echo " | " . $file; // ispisuje imena fajlova iznad dokumenta...
+    setlocale(LC_ALL, 'en_US.utf8');
+    $files = scandir($dir);
+    foreach ($files as $file) {
+        echo $file . "<br>";
         array_push($niz, $file);
     }
-    closedir($dh);
 } else {
-    die('Nema "$dir" foldera...');
+    die('no folder "<strong>' . $dir . '</strong>"...');
 }
+//if (is_dir($dir)) {
+//    $dh = opendir($dir);
+//    while ($file = readdir($dh)) {
+//        echo $file . "<br>"; // ispisuje imena fajlova iznad dokumenta...
+//        array_push($niz, $file);
+//    }
+//    closedir($dh);
+//} else {
+//    die('Nema definisanog foldera "<strong>' . $dir . '</strong>"...');
+//}
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<!--<html lang="en">-->
+<html lang="sr-Cyrl">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -34,8 +47,7 @@ if (is_dir($dir)) {
     -->
     <?php for ($i = 2; $i < count($niz); $i++) {
         ?>
-        <a href="<?= $dir ?>/<?= $niz[$i]; ?>" data-lg-size="548-450">
-            <img alt="<?= explode(' - ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/> </a>
+        <a href="<?= $dir ?>/<?= $niz[$i]; ?>"><img alt="<?= explode(' = ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/></a>
     <?php } ?>
 </div>
 </body>
