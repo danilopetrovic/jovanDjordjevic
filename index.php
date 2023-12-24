@@ -7,7 +7,9 @@
 * TODO
  * razdvojiti header i footer u 2 odvojena php fajla koji se importuju
  * hader odraditi tako da ima iz "img" foldera portret i potpis i da ispod budu linkovi
+ * main napraviti galeriju
  * footer uraditi tako da <i> ikonice budu malo vece i centrirane sve pored texta
+ * footer dodati mapu i izgled kuce za adresu
 */
 header('Content-Type: text/html; charset=utf-8');
 ini_set('default_charset', 'UTF-8');
