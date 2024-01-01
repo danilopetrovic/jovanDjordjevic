@@ -23,7 +23,9 @@
 require_once "header.php"
 ?>
 <main>
-    <div class="wrapper">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur est laborum magnam porro quod. Ab alias aliquid aperiam architecto, autem debitis delectus distinctio dolor doloremque dolorum est expedita illo laboriosam maiores, molestiae molestias nemo, neque nobis non nostrum odit officia placeat quas reprehenderit repudiandae sint vel? Delectus doloribus expedita in officia quam quia quidem quos repellat totam voluptatum? Corporis cumque deleniti ducimus, eligendi impedit ipsa iusto necessitatibus, nemo perspiciatis possimus quaerat ratione recusandae sed sit voluptatum! A delectus eaque earum fugiat laboriosam minima qui, quos repudiandae saepe voluptatum. Accusamus aliquam at consequuntur eius in officiis pariatur sunt. Reiciendis, rem.</div>
+    <div class="wrapper">Сликар Јован М.Ђорђевић је рођен 1945 године у Београду, где и данас живи и ради. <br>
+        Излагао је на многобројним заједничким и самосталним изложбама, а његове слике се могу наћи у продајним галеријама.<br>
+        Нешто о овом сликару можете видети на овом сајту.</div>
 </main>
 <?php
 require_once "footer.php"
