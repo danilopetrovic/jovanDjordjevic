@@ -4,13 +4,13 @@
  * ? asdfsaf
  * sdfdsafa
  * @param: asdfsaf
-* TODO
+ * TODO
  * razdvojiti header i footer u 2 odvojena php fajla koji se importuju
  * hader odraditi tako da ima iz "img" foldera portret i potpis i da ispod budu linkovi
  * main napraviti galeriju
  * footer uraditi tako da <i> ikonice budu malo vece i centrirane sve pored texta
  * footer dodati mapu i izgled kuce za adresu
-*/
+ */
 header('Content-Type: text/html; charset=utf-8');
 ini_set('default_charset', 'UTF-8');
 $dir = "galerija_ikona";
@@ -57,35 +57,26 @@ if (is_dir($dir)) {
     <link rel="icon" href="img/favicon_painter.png" type="image/x-icon">
     <link href="/fontawesome-free-6.5.1-web/css/fontawesome.min.css" rel="stylesheet">
     <script defer src="fontawesome-free-6.5.1-web\js\all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-<header id="header">
-    <h1>Your Website Name</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Галерија Икона</a></li>
-            <li><a href="#">Галерија Слика</a></li>
-            <li><a href="#">Биографија</a></li>
-        </ul>
-    </nav>
-</header>
+<?php
+require_once "header.php"
+?>
 <main>
-    <div id="lightgallery">
-        <?php for ($i = 2; $i < count($niz); $i++) {
-            ?>
-            <a href="<?= $dir ?>/<?= $niz[$i]; ?>"><img alt="<?= explode(' = ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/></a>
-        <?php } ?>
+    <div class="wrapper">
+        <div id="lightgallery">
+            <?php for ($i = 2; $i < count($niz); $i++) {
+                ?>
+                <a href="<?= $dir ?>/<?= $niz[$i]; ?>"><img alt="<?= explode(' = ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/></a>
+            <?php } ?>
+        </div>
     </div>
 </main>
-<footer id="footer">
-    <p>&copy; Сва права резервисана.</p>
-    <nav>
-        <ul>
-            <li><i class="fa-solid fa-map-location-dot"></i> Ул. Војина Ђурашиновића 31, Миријево, 11000 Београд</li>
-            <li><a href="tel:+38163/71-87-115"><i class="fa-solid fa-mobile-screen"></i> 063/71-87-115</a></li>
-            <li><a href="mailto:sabljabg@gmail.com"><i class="fa-solid fa-envelope"></i> Пошаљите нам е-маил</a></li>
-        </ul>
-    </nav>
-</footer>
+<?php
+require_once "footer.php"
+?>
 </body>
 </html>
