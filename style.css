@@ -19,6 +19,10 @@ a {
     position: relative;
 }
 
+.active{
+    border-bottom: 3px solid #fe6724;
+}
+
 .nav a::after,
 .nav a::after{
     content: '';
@@ -27,7 +31,7 @@ a {
     height: 3px;
     background-color: #fe6724;
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
     left: 0;
     transition: width .25s ease;
 }
@@ -73,6 +77,9 @@ img {
 }
 
 /* ### MAIN ### */
+main {
+    margin: 20px;
+}
 #lightgallery {
     display: flex;
     justify-content: center;
