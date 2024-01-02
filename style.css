@@ -123,6 +123,10 @@ main {
     margin-bottom: 15px;
 }
 
+#contact-info li i {
+    font-size: 1.2rem;
+}
+
 #prava {
     margin: 10px;
     flex: 1 0 100%; /* flex-grow, flex-shrink, flex-basis */
