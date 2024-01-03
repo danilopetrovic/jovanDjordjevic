@@ -13,10 +13,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <header id="header">
     <div class="wrapper">
         <div id="header-icons">
-            <a href="index.php">
-                <div id="potpis"><img src="img/potpis.gif" alt="Potpis"></div>
-                <div id="portret"><img src="img/portret.jpg" alt="Portret Jovan Djordjevic"></div>
-            </a>
+            <a href="index.php"><img id="potpis" src="img/potpis.gif" alt="Potpis"><img id="portret" src="img/portret.jpg" alt="Portret Jovan Djordjevic"></a>
         </div>
         <nav id="header-nav-links" class="nav">
             <ul>

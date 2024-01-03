@@ -3,14 +3,16 @@
 <html lang="sr-Cyrl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="slikar Jovan Djordjevic, Jovan Đorđević, slikar Јован Ђорђевић, slikar, сликар, slike, слике, репродукције, ikone, иконе, ulje na platnu, уље на платну" name="keywords">
+    <meta name="author" content="Danilo Petrovic">
     <title>Јован Ђорђевић Сликар</title>
     <link type="text/css" rel="stylesheet" href="lightGallery-master/dist/css/lightgallery-bundle.css"/>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="lightGallery-master/dist/lightgallery.min.js"></script>
-    <script type="module" src="lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
-    <script type="module" src="lightGallery-master/dist/plugins/zoom/lg-zoom.min.js"></script>
-    <script type="module" src="app.js"></script>
+    <script defer type="module" src="lightGallery-master/dist/lightgallery.min.js"></script>
+    <script defer type="module" src="lightGallery-master/dist/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script defer type="module" src="lightGallery-master/dist/plugins/zoom/lg-zoom.min.js"></script>
+    <script defer type="module" src="app.js"></script>
     <link rel="icon" href="img/favicon_painter.png" type="image/x-icon">
     <link href="/fontawesome-free-6.5.1-web/css/fontawesome.min.css" rel="stylesheet">
     <script defer src="fontawesome-free-6.5.1-web\js\all.min.js"></script>
