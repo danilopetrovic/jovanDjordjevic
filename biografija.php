@@ -7,8 +7,6 @@ require_once "header.php"
         Излагао је на многобројним заједничким и самосталним изложбама, а његове слике се могу наћи у продајним галеријама.<br>
         Нешто о овом сликару можете видети на овом сајту.</div>
 </main>
-<?php
-require_once "footer.php"
-?>
+<?php require_once "footer.php"; ?>
 </body>
 </html>
