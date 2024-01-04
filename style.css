@@ -128,7 +128,7 @@ main {
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #header-nav-links ul li {
         flex: 1 0 100%; !important;
     }
@@ -138,8 +138,19 @@ main {
     *, body, i, a {
         font-size: 1.4rem; !important;
     }
-
     #lightgallery img {
-        max-width: 400px; !important;  // max-height
+        max-width: 768px; !important;  // max-height
+    }
+}
+
+@media (max-width: 400px) {
+    #header-nav-links ul li a{
+        font-size: 1.5rem; !important;
+    }
+    *, body, i, a {
+        font-size: 1.1rem; !important;
+    }
+    #lightgallery img {
+        max-width: 450px; !important;  // max-height
     }
 }
