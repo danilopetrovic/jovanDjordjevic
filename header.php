@@ -13,7 +13,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 <header id="header">
     <div class="wrapper">
         <div id="header-icons">
-            <a href="index.php"><img id="potpis" src="img/potpis.gif" alt="Potpis"><img id="portret" src="img/portret.jpg" alt="Portret Jovan Djordjevic"></a>
+            <a href="galerija_ikona.php"><img id="potpis" src="img/potpis.gif" alt="Potpis"><img id="portret" src="img/portret.jpg" alt="Portret Jovan Djordjevic"></a>
         </div>
         <nav id="header-nav-links" class="nav">
             <ul>
@@ -22,7 +22,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 foreach ($nizSvihStranica as $stranica) {
                     if ($currentPage == $stranica[0]) {
                         $output = <<<EOT
-                                    <li><a href="$stranica[0]" class="active">$stranica[1]</a></li>
+                                    <li><a href="#" class="active">$stranica[1]</a></li>
 EOT;
                     } else
                         $output = <<<EOT
