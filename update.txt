@@ -1,0 +1,17 @@
+<?php
+$a = 'This is var $a<br>';
+echo $a;
+
+$filePath = 'update.php';
+if (file_exists ($filePath)) {
+    echo 'File exists!<br>';
+} else echo 'File does not exist.<br>';
+if (file_exists($filePath)) {
+    if (unlink($filePath)) {
+        echo 'File deleted successfully.<br>';
+    } else {
+        echo 'Failed to delete the file.<br>';
+    }
+} else {
+    echo 'File does not exist.<br>';
+}
