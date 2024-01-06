@@ -1,7 +1,4 @@
 <?php
-$a = 'This is var $a<br>';
-echo $a;
-
 $filePath = 'update.php';
 if (file_exists ($filePath)) {
     echo 'File exists!<br>';
