@@ -1,3 +1,7 @@
+:root {
+    --link-color: #fe6724;
+}
+
 *, html, body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -19,17 +23,17 @@ a {
     position: relative;
 }
 
-.active{
-    border-bottom: 3px solid #fe6724;
+.active {
+    border-bottom: 3px solid var(--link-color);
 }
 
 .nav a::after,
-.nav a::after{
+.nav a::after {
     content: '';
     display: block;
     width: 0;
     height: 3px;
-    background-color: #fe6724;
+    background-color: var(--link-color);
     position: absolute;
     bottom: -3px;
     left: 0;
@@ -74,6 +78,7 @@ img {
 main {
     margin: 20px;
 }
+
 #lightgallery {
     display: flex;
     justify-content: center;
@@ -84,7 +89,7 @@ main {
 }
 
 #lightgallery img {
-    max-width: 200px; // max-height
+    max-width: 200px; /*max-height*/
 }
 
 
@@ -130,27 +135,32 @@ main {
 
 @media (max-width: 768px) {
     #header-nav-links ul li {
-        flex: 1 0 100%; !important;
+        flex: 1 0 100%;
     }
-    #header-nav-links ul li a{
-        font-size: 2rem; !important;
+
+    #header-nav-links ul li a {
+        font-size: 2rem;
     }
+
     *, body, i, a {
-        font-size: 1.4rem; !important;
+        font-size: 1.2rem;
     }
+
     #lightgallery img {
-        max-width: 768px; !important;  // max-height
+        max-width: 768px; /*max-height*/
     }
 }
 
 @media (max-width: 400px) {
-    #header-nav-links ul li a{
-        font-size: 1.5rem; !important;
+    #header-nav-links ul li a {
+        font-size: 1.5rem;
     }
+
     *, body, i, a {
-        font-size: 1.1rem; !important;
+        font-size: 1.1rem;
     }
+
     #lightgallery img {
-        max-width: 450px; !important;  // max-height
+        max-width: 450px;
     }
 }
