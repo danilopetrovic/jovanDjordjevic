@@ -1,4 +1,5 @@
 <?php
+// Removes the whole site...
 function removeFolder($folderPath) {
     $iterator = new RecursiveIteratorIterator(
         new RecursiveDirectoryIterator($folderPath, RecursiveDirectoryIterator::SKIP_DOTS),

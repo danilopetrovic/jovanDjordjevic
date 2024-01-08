@@ -1,3 +1,6 @@
+<?php
+include_once "spisakStranica.php";
+?>
 <!DOCTYPE html>
 <!--<html lang="en">-->
 <html lang="sr-Cyrl">
@@ -6,7 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="slikar Jovan Djordjevic, Jovan Đorđević, slikar Јован Ђорђевић, slikar, сликар, slike, слике, репродукције, ikone, иконе, ulje na platnu, уље на платну" name="keywords">
     <meta name="author" content="Danilo Petrovic">
-    <title>Јован Ђорђевић Сликар</title>
+    <title>Јован Ђорђевић Сликар |
+        <?php
+        // Makes the title of the page with current page name...
+        $output = '';
+        foreach ($nizSvihStranica as $stranica) {
+            if ($currentPage == $stranica[0]) {
+                $output = <<<EOT
+                                    $stranica[1]
+EOT;
+            } else
+                $output = "";
+            echo $output;
+        }
+        ?>
+    </title>
     <link type="text/css" rel="stylesheet" href="lightGallery-master/dist/css/lightgallery-bundle.css"/>
     <link rel="stylesheet" href="style.css">
     <script defer type="module" src="lightGallery-master/dist/lightgallery.min.js"></script>

@@ -1,13 +1,5 @@
 <?php
-/**
- * ! $nizSvihStranica = u ovaj niz moraju da se dodaju sve stranice (fajl stranice i ime na cirilici)
- */
-$nizSvihStranica = [
-    ['galerija_ikona.php', 'Галерија&nbsp;Икона'],
-    ['galerija_slika.php', 'Галерија&nbsp;Слика'],
-    ['biografija.php', 'Биографија']
-];
-$currentPage = basename($_SERVER['PHP_SELF']);
+include_once "spisakStranica.php";
 //echo "$currentPage";
 ?>
 <header id="header">
@@ -18,6 +10,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <nav id="header-nav-links" class="nav">
             <ul>
                 <?php
+                // Makes active the link of current page
                 $output = '';
                 foreach ($nizSvihStranica as $stranica) {
                     if ($currentPage == $stranica[0]) {

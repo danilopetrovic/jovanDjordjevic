@@ -1,7 +1,7 @@
 <?php
 /**
- * ! sadfasf
- * ? asdfsaf
+ * ! aaaaa
+ * ? aaaaa
  * TODO
  * footer uraditi tako da <i> ikonice budu malo vece i centrirane sve pored texta
  */
@@ -11,11 +11,14 @@ $dir = "galerija_ikona";
 $separator = "--";
 $niz = array();
 
+// scanning files from directory
 if (is_dir($dir)) {
     setlocale(LC_ALL, 'en_US.utf8');
     $files = scandir($dir);
     foreach ($files as $file) {
-//        echo $file . "<br>"; // ispisuje imena fajlova iznad dokumenta...
+        // showing files on top of the documment
+//        echo $file . "<br>";
+        // adding files names and destination to array
         array_push($niz, $file);
     }
 } else {
@@ -41,6 +44,7 @@ require_once "header.php";
 <main>
     <div class="wrapper">
         <div id="lightgallery">
+            <!-- looping files in gallery -->
             <?php for ($i = 2; $i < count($niz); $i++) {
                 ?>
                 <a href="<?= $dir ?>/<?= $niz[$i]; ?>"><img alt="<?= explode(' -- ', explode('.jpg', $niz[$i])[0])[1]; ?>" src="<?= $dir ?>/<?= $niz[$i]; ?>"/></a>
