@@ -108,9 +108,10 @@ main {
 #kakoDoNas {
     position: absolute;
     left: 50%;
+    bottom: 0;
     transform: translate(-50%);
     padding: 2px 12px 6px 12px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 #contact-info {

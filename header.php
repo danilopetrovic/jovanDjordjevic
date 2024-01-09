@@ -1,7 +1,3 @@
-<?php
-include_once "spisakStranica.php";
-//echo "$currentPage";
-?>
 <header id="header">
     <div class="wrapper">
         <div id="header-icons">

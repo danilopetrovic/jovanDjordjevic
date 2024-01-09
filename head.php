@@ -1,5 +1,5 @@
 <?php
-include_once "spisakStranica.php";
+include_once "listOfPages.php";
 ?>
 <!DOCTYPE html>
 <!--<html lang="en">-->
