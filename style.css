@@ -16,6 +16,7 @@ ul {
 
 li {
     list-style: none;
+    margin-left: 15px;
 }
 
 a {
@@ -140,11 +141,15 @@ main {
     }
 
     #header-nav-links ul li a {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     *, body, i, a {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    #contact-info ul li a {
+        font-size: 1rem;
     }
 
     #lightgallery img {
